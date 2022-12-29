@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <!--side nav start-->
+    <nav class="side-nav">
+      <div class="side-nav-head">
+        <div class="logo">
+          <a href="">
+            <div class="logo-wrapper">
+              <div class="shape"></div>
+              <h2>Dabang</h2>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="side-nav-body">
+        <ul class="items">
+          <li>
+            <a href="">
+              <span class="icon"><i class="fa-solid fa-chart-pie"></i></span>
+              <span class="item-name">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span class="icon"><i class="fa-solid fa-chart-simple"></i></span>
+              <span class="item-name">Leaderboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span class="icon"
+                ><i class="fa-solid fa-cart-shopping"></i
+              ></span>
+              <span class="item-name">order</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span class="icon"><i class="fa-solid fa-bag-shopping"></i></span>
+              <span class="item-name">Products</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span class="icon"><i class="fa-solid fa-chart-line"></i></span>
+              <span class="item-name">Sales Report</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span class="icon"><i class="fa-solid fa-message"></i></span>
+              <span class="item-name">Messages</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span class="icon"><i class="fa-solid fa-gear"></i></span>
+              <span class="item-name">Settings</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span class="icon"
+                ><i class="fa-solid fa-right-from-bracket"></i
+              ></span>
+              <span class="item-name">Sign Out</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="side-nav-bottom">
+        <div class="card">
+          <div class="circle circle-top"></div>
+          <div class="circle circle-bottom"></div>
+        </div>
+      </div>
+    </nav>
+    <!--side nav end-->
+    <!--top nav start-->
+    <nav class="top-nav">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-4">
+            <div class="nav-left">
+              <h1 class="h1">Dashboard</h1>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="nav-right">
+              <div class="row align-items-center">
+                <div class="col-md-6">
+                  <div class="search">
+                    <form action="">
+                      <button>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                      </button>
+                      <input type="text" placeholder="Search here" />
+                    </form>
+                  </div>
+                </div>
+                <div class="col-2">
+                  <div class="burger-menu">
+                    <a href="#"><i class="fa-solid fa-bars"></i></a>
+                  </div>
+                  <div class="language">
+                    <i class="fa-solid fa-flag-usa"></i>
+                    <span>Eng(US)</span>
+                    <i class="fa-solid fa-angle-down"></i>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="admin">
+                    <div class="admin-wrapper">
+                      <div class="bell">
+                        <a href="">
+                          <i class="fa-solid fa-bell"></i>
+                        </a>
+                      </div>
+                      <div class="image">
+                        <picture>
+                          <img
+                            src="images/propic.jpg"
+                            class="img-fluid"
+                            alt=""
+                          />
+                        </picture>
+                      </div>
+                      <div class="admin-name">
+                        <h3>Maisha <i class="fa-solid fa-angle-down"></i></h3>
+                        <p>Admin</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--top nav end-->
+    <section class="main">
+      <!--first sec start-->
+      <section class="first-sec">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-8 align-self-stretch">
+              <div class="sales">
+                <div class="row justify-content-between">
+                  <div class="col-4">
+                    <div class="left">
+                      <h3 class="heading">Today's Sales</h3>
+                      <p>Sales Summery</p>
+                    </div>
+                  </div>
+                  <div class="col-4 text-end">
+                    <div class="right">
+                      <button class="export">
+                        <i class="fa-solid fa-file-arrow-down"></i>
+                        <span>Export</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-3 mb-3 mb-lg-0">
+                    <div class="card">
+                      <div class="card-icon">
+                        <a href="">
+                          <i class="fa-solid fa-chart-simple"></i>
+                        </a>
+                      </div>
+                      <h3 class="card-header">$1K</h3>
+                      <p class="card-label">Total Sales</p>
+                      <p class="card-btm">+5% from yesterday</p>
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-3 mb-lg-0">
+                    <div class="card">
+                      <div class="card-icon">
+                        <a href="">
+                          <i class="fa-solid fa-chart-simple"></i>
+                        </a>
+                      </div>
+                      <h3 class="card-header">$1K</h3>
+                      <p class="card-label">Total Sales</p>
+                      <p class="card-btm">+5% from yesterday</p>
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-3 mb-lg-0">
+                    <div class="card">
+                      <div class="card-icon">
+                        <a href="">
+                          <i class="fa-solid fa-chart-simple"></i>
+                        </a>
+                      </div>
+                      <h3 class="card-header">$1K</h3>
+                      <p class="card-label">Total Sales</p>
+                      <p class="card-btm">+5% from yesterday</p>
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-3 mb-lg-0">
+                    <div class="card">
+                      <div class="card-icon">
+                        <a href="">
+                          <i class="fa-solid fa-chart-simple"></i>
+                        </a>
+                      </div>
+                      <h3 class="card-header">$1K</h3>
+                      <p class="card-label">Total Sales</p>
+                      <p class="card-btm">+5% from yesterday</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mt-2 mt-lg-0">
+              <div class="visitor-card">
+                <div class="card-body">
+                  <h3 class="heading">Visitor Insights</h3>
+                  <hr />
+                  <canvas id="linechart"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--first sec end-->
+      <!--second sec start-->
+      <section class="second-sec">
+        <div class="container">
+          <div class="row mt-2 align-items-center">
+            <div class="col-md-4 mb-2 mb-lg-0">
+              <div class="bar-card">
+                <div class="card-body">
+                  <h3 class="heading">Total Revenue</h3>
+                  <hr />
+                  <canvas id="barchart"></canvas>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-2 mb-lg-0">
+              <div class="customer-card">
+                <div class="card-body">
+                  <h3 class="heading">Customer Satisfaction</h3>
+                  <hr />
+                  <canvas id="linechart2"></canvas>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="target-card">
+                <div class="target-body">
+                  <h3 class="heading">Target vs Reality</h3>
+                  <hr />
+                  <canvas id="Targetbarchart"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--second sec end-->
+      <!--third sec start-->
+      <section class="third-sec">
+        <div class="container">
+          <div class="row mt-2 align-items-center">
+            <div class="col-md-4">
+              <div class="product-card">
+                <div class="card-body">
+                  <h3 class="heading">Total Revenue</h3>
+                  <hr />
+                  <canvas id="Productbarchart"></canvas>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="country-card">
+                <div class="card-body">
+                  <h3 class="heading">Sales Mapping by Country</h3>
+                  <hr />
+                  <canvas id="map"></canvas>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="service-card">
+                <div class="target-body">
+                  <h3 class="heading">Volume vs Service Level</h3>
+                  <hr />
+                  <canvas id="Servicebarchart"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--third sec end-->
+      <div class="overlay">
+        <div class="cross">
+          <a href="#"><i class="fa-solid fa-xmark"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/script.js"></script>
+
+    <script>
+      //Chart.js
+      /**visitors insight line chart start**/
+      const Linecolors1 = "#0395FD";
+      const Linecolors2 = "#00E096";
+      const Linecolors3 = "#A700FF";
+      const border1 = "#0395FD";
+      const border2 = "#EF4444";
+      const border3 = "#42D95B";
+      const ctx1 = document.getElementById("linechart");
+
+      new Chart(ctx1, {
+        type: "line",
+        data: {
+          labels: [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec",
+          ],
+          datasets: [
+            {
+              label: "# of Votes",
+              data: [100, 99, 20, 150, 220, 300, 320, 340, 180, 200, 360, 400],
+              borderColor: border1,
+              tension: 0.4,
+              borderWidth: 2,
+            },
+            {
+              label: "# of Votes",
+              data: [
+                200, 299, 120, 350, 120, 300, 340, 360, 380, 400, 260, 100,
+              ],
+              borderColor: border2,
+              tension: 0.4,
+              borderWidth: 2,
+            },
+            {
+              label: "# of Votes",
+              data: [
+                250, 350, 320, 300, 280, 260, 200, 280, 290, 320, 340, 200,
+              ],
+              borderColor: border3,
+              tension: 0.4,
+              borderWidth: 2,
+            },
+          ],
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true,
+            },
+          },
+        },
+      });
+      /**visitors insight line chart end**/
+      /**revenue bar chart start**/
+      const colors1 = "#0395FD";
+      const colors2 = "#00E096";
+      const ctx2 = document.getElementById("barchart");
+
+      new Chart(ctx2, {
+        type: "bar",
+        data: {
+          labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "sun"],
+          datasets: [
+            {
+              label: "# of Votes",
+              data: [14000, 17000, 6000, 15000, 14000, 19000, 22000],
+              backgroundColor: colors1,
+              maxBarThickness: 15,
+              borderRadius: 5,
+              borderWidth: 1,
+            },
+            {
+              label: "# of Votes",
+              data: [13000, 12000, 23000, 5000, 13000, 17000, 10000],
+              backgroundColor: colors2,
+              maxBarThickness: 15,
+              borderRadius: 5,
+              borderWidth: 1,
+            },
+          ],
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true,
+            },
+          },
+        },
+      });
+      /**revenue bar chart end**/
+      /**customer satisfaction line chart start**/
+      const Linecolors11 = "#0395FD";
+      const Linecolors22 = "#00E096";
+      const Linecolors33 = "#A700FF";
+      const border11 = "#0395FD";
+      const border22 = "#EF4444";
+      const border33 = "#42D95B";
+      const ctx3 = document.getElementById("linechart2");
+
+      new Chart(ctx3, {
+        type: "line",
+        data: {
+          labels: [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec",
+          ],
+          datasets: [
+            {
+              label: "# of Votes",
+              data: [100, 99, 20, 150, 220, 300, 320, 340, 180, 200, 360, 400],
+              borderColor: border11,
+              tension: 0.4,
+              borderWidth: 2,
+            },
+            {
+              label: "# of Votes",
+              data: [
+                200, 299, 120, 350, 120, 300, 340, 360, 380, 400, 260, 100,
+              ],
+              borderColor: border22,
+              tension: 0.4,
+              borderWidth: 2,
+            },
+            {
+              label: "# of Votes",
+              data: [
+                250, 350, 320, 300, 280, 260, 200, 280, 290, 320, 340, 200,
+              ],
+              borderColor: border3,
+              tension: 0.4,
+              borderWidth: 2,
+            },
+          ],
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true,
+            },
+          },
+        },
+      });
+      /**customer satisfaction line chart end**/
+      /**target bar chart start**/
+      const targetColor1 = "#FFCF00";
+      const targetColor2 = "#4AB58E";
+      const ctx4 = document.getElementById("Targetbarchart");
+
+      new Chart(ctx4, {
+        type: "bar",
+        data: {
+          labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
+          datasets: [
+            {
+              label: "# of Votes",
+              data: [14000, 17000, 6000, 15000, 14000, 19000, 22000],
+              backgroundColor: targetColor1,
+              maxBarThickness: 15,
+              borderRadius: 5,
+              borderWidth: 1,
+            },
+            {
+              label: "# of Votes",
+              data: [13000, 12000, 23000, 5000, 13000, 17000, 10000],
+              backgroundColor: targetColor2,
+              maxBarThickness: 15,
+              borderRadius: 5,
+              borderWidth: 1,
+            },
+          ],
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true,
+            },
+          },
+        },
+      });
+      /**target bar chart end**/
+      /**product progress bar start**/
+      const product1 = "#0395FD";
+      const product2 = "#00E096";
+      const ctx5 = document.getElementById("Productbarchart");
+
+      new Chart(ctx5, {
+        type: "bar",
+        data: {
+          labels: [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "sunday",
+          ],
+          datasets: [
+            {
+              label: "# of Votes",
+              data: [14000, 17000, 6000, 15000, 14000, 19000, 22000],
+              backgroundColor: colors1,
+              maxBarThickness: 10,
+              borderWidth: 1,
+              borderSkipped: false,
+              borderRadius: 5,
+              barPercentage: 0.8,
+              categoryPercentage: 0.9,
+            },
+          ],
+        },
+        options: {
+          indexAxis: "y",
+          plugins: {
+            legend: {
+              display: false,
+            },
+          },
+          scales: {
+            x: {
+              grid: {
+                display: false,
+                drawBorder: false,
+              },
+              ticks: {
+                display: false,
+              },
+            },
+            y: {
+              beginAtZero: true,
+              grid: {
+                display: false,
+                drawBorder: false,
+              },
+              ticks: {
+                display: false,
+              },
+            },
+          },
+        },
+      });
+      /**product progress bar end**/
+      /**service bar start**/
+      const service1 = "#0395FD";
+      const service2 = "#00E096";
+      const ctx6 = document.getElementById("Servicebarchart");
+      new Chart(ctx6, {
+        type: "bar",
+        data: {
+          labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+          datasets: [
+            {
+              label: "# of Votes",
+              data: [14000, 17000, 6000, 15000, 14000, 19000],
+              backgroundColor: service1,
+              maxBarThickness: 15,
+              borderRadius: 5,
+              borderWidth: 1,
+            },
+          ],
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true,
+            },
+          },
+        },
+      });
+      /**service bar end**/
+    </script>
+  </body>
+</html>
