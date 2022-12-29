@@ -1,0 +1,384 @@
+/***common css start***/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-fam);
+}
+body {
+  background-color: #eaedede6;
+}
+a {
+  text-decoration: none;
+}
+ul,
+li {
+  list-style-type: none;
+}
+:root {
+  --font-fam: "Open Sans", sans-serif;
+}
+/***common css end***/
+
+/***top nav css start***/
+.top-nav {
+  width: 100%;
+  background-color: white;
+  padding: 10px 0px;
+  position: sticky;
+  top: 0;
+  z-index: 9;
+}
+.nav-left h1 {
+  font-size: 25px;
+  font-weight: 700;
+  margin-left: 45%;
+  color: rgba(0, 0, 0, 0.7);
+}
+.search form {
+  width: 100%;
+  position: relative;
+}
+.search form input {
+  width: 80%;
+  padding: 10px;
+  padding-left: 47px;
+  border: none;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  outline: none;
+}
+.search form button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  padding: 0 10px;
+  outline: none;
+  border: 0;
+  border-radius: 8px;
+}
+.search form button i {
+  color: #645caa;
+}
+.language i:first-child {
+  margin-right: 5px;
+  font-size: 14px;
+  color: rgba(133, 0, 0, 0.7);
+}
+.language span {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.language i:last-child {
+  margin-left: 10px;
+  font-size: 10px;
+}
+.admin {
+  width: 100%;
+}
+.admin-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bell {
+  width: 30%;
+  text-align: center;
+}
+.bell a {
+  display: inline-block;
+  background-color: #ff6f3121;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+.bell a i {
+  color: #eb6540e2;
+}
+.image {
+  width: 20%;
+}
+.image img {
+  object-fit: contain;
+  height: 60px;
+  width: 60px;
+  border-radius: 10px;
+}
+.admin-name {
+  width: 45%;
+  margin-left: 15px;
+}
+.admin-name h3 {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 0;
+  color: rgba(0, 0, 0, 0.7);
+}
+.admin-name h3 i {
+  margin-left: 20px;
+  font-size: 10px;
+}
+.admin-name p {
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 0;
+  color: rgba(0, 0, 0, 0.766);
+}
+.burger-menu {
+  margin: 6px 10px 0;
+  display: none;
+}
+.burger-menu a i {
+  color: rgb(0, 0, 0, 0.6);
+}
+/***top nav css end***/
+/**side nav css start**/
+.side-nav {
+  width: 250px;
+  background-color: white;
+  position: fixed;
+  height: 100%;
+  padding: 20px;
+  z-index: 999;
+  transition: 0.5s ease-in-out;
+}
+
+::-webkit-scrollbar {
+  background-color: rgba(0, 0, 0, 0.136);
+  width: 6px;
+  border-radius: 20px;
+}
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+}
+.shape {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #645caad4;
+}
+.logo {
+  padding: 10px;
+}
+.logo h2 {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 22px;
+  font-weight: 700;
+  margin-left: 10px;
+  margin-bottom: 0;
+}
+.side-nav-head {
+  height: 10%;
+}
+.side-nav-body {
+  height: 60%;
+  padding: 10px 0;
+}
+.side-nav-bottom {
+  height: 30%;
+}
+.side-nav-body .items {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+}
+.side-nav-body .items li {
+  padding: 12px;
+}
+.side-nav-body .items li a {
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.5s ease-in-out;
+}
+.side-nav-body .items li a:hover {
+  background-color: #645caa;
+  color: white;
+}
+.side-nav-body .items li a:hover span {
+  color: white;
+}
+.icon {
+  margin-right: 10px;
+}
+.side-nav-body .items li a span {
+  color: rgba(0, 0, 0, 0.5);
+  transition: 0.5s ease-in-out;
+}
+.side-nav-bottom .card {
+  width: 80%;
+  height: 100%;
+  background-color: #645caa;
+  position: relative;
+  overflow: hidden;
+  border: none;
+}
+.circle {
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  background: rgb(255, 255, 255, 0.2);
+  border-radius: 100%;
+}
+.circle-top {
+  top: -70px;
+  right: -10px;
+}
+.circle-bottom {
+  left: -59px;
+  bottom: -84px;
+}
+
+/**side nav css end**/
+/**main css start**/
+.main {
+  padding-top: 10px;
+  padding-left: 260px;
+}
+/**first sec start**/
+/**sales css start**/
+.sales {
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+}
+.heading {
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 700;
+}
+.sales .left p {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 500;
+}
+.sales .right button {
+  padding: 5px 20px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  background-color: transparent;
+}
+.sales .right button i,
+.sales .right button span {
+  color: rgba(0, 0, 0, 0.8);
+}
+.sales .right button i {
+  margin-right: 6px;
+}
+.card-header,
+.card-label,
+.card-btm {
+  margin: 0;
+  padding: 0;
+}
+.card {
+  background-color: #fee3e5;
+  padding: 20px;
+  height: 200px;
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+}
+.card-icon a {
+  background-color: #f35c7f;
+  padding: 8px 12px;
+  border-radius: 100%;
+}
+.card-icon a i {
+  color: white;
+}
+.card-icon {
+  margin-bottom: 30px;
+}
+.card-header {
+  color: black;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: transparent;
+  border: none;
+  margin: 10px 0 !important;
+}
+.card-label {
+  color: rgb(0, 0, 0, 0.6);
+  font-size: 16px;
+  font-weight: 500;
+  margin: 5px 0 !important;
+}
+.card-btm {
+  font-size: 14px;
+  color: #3873da;
+  font-weight: 500;
+  margin-top: 5px !important;
+}
+.card-header,
+.card-label,
+.card-btm {
+  margin: 0;
+  padding: 0;
+}
+/**sales css end**/
+.visitor-card {
+  background-color: white;
+  border-radius: 20px;
+}
+/**first sec end**/
+/**second sec start**/
+.bar-card {
+  background-color: white;
+  border-radius: 20px;
+}
+.customer-card {
+  background-color: white;
+  border-radius: 20px;
+}
+.target-card {
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+}
+.product-card {
+  background-color: white;
+  border-radius: 20px;
+}
+.service-card {
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+/**second sec end**/
+/**overlay start**/
+.main {
+  position: relative;
+}
+.overlay {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: -139px;
+  left: 0;
+  bottom: 0;
+  z-index: 99;
+  transition: 0.5s ease-in-out;
+}
+.overlayActive {
+  right: 0;
+}
+.cross {
+  position: absolute;
+  right: 70px;
+  top: 60px;
+}
+.cross a i {
+  color: white;
+  font-size: 20px;
+  margin: 0;
+  vertical-align: middle;
+}
+.cross a {
+  background-color: rgba(255, 255, 255, 0.338);
+  padding: 13px 19px;
+  border-radius: 100%;
+}
+/**overlay end**/
+/**main css end**/

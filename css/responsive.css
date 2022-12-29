@@ -1,0 +1,95 @@
+/**medium device css start**/
+@media (min-width: 768px) and (max-width: 991.99px) {
+  .side-nav {
+    left: -50%;
+    width: 50%;
+  }
+  .active {
+    left: 0;
+  }
+  .burger-menu {
+    display: block;
+  }
+  .main {
+    padding-left: 0;
+  }
+  .nav-left h1 {
+    font-size: 20px;
+    margin: 0 0 10px;
+    text-align: center;
+  }
+  .search form input {
+    width: 100%;
+  }
+  .language {
+    display: none;
+  }
+  .admin {
+    display: none;
+  }
+}
+/**medium device css end**/
+/***small device css start**/
+@media (min-width: 576px) and (max-width: 767.99px) {
+  .side-nav {
+    left: -50%;
+    width: 50%;
+  }
+  .active {
+    left: 0;
+  }
+  .burger-menu {
+    display: block;
+  }
+  .main {
+    padding-left: 0;
+  }
+  .nav-left h1 {
+    font-size: 20px;
+    margin: 0 0 10px;
+    text-align: center;
+  }
+  .search form input {
+    width: 100%;
+  }
+  .language {
+    display: none;
+  }
+  .admin {
+    display: none;
+  }
+}
+
+/***small device css end**/
+
+/*****extra small device css start***/
+@media (max-width: 575.99px) {
+  .side-nav {
+    left: -50%;
+    width: 50%;
+  }
+  .active {
+    left: 0;
+  }
+  .burger-menu {
+    display: block;
+  }
+  .main {
+    padding-left: 0;
+  }
+  .nav-left h1 {
+    font-size: 20px;
+    margin: 0 0 10px;
+    text-align: center;
+  }
+  .search form input {
+    width: 100%;
+  }
+  .language {
+    display: none;
+  }
+  .admin {
+    display: none;
+  }
+}
+/*****extra small device css end***/
