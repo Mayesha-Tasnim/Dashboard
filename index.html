@@ -21,7 +21,7 @@
         <div class="logo">
           <a href="">
             <div class="logo-wrapper">
-              <div class="shape"></div>
+              <div class="shape"><i class="fa-solid fa-fire"></i></div>
               <h2>Dabang</h2>
             </div>
           </a>
@@ -85,11 +85,41 @@
       </div>
       <div class="side-nav-bottom">
         <div class="card">
+          <div class="card-content">
+            <h3>Dabang Pro</h3>
+            <p>Get access to all features on tetumbas</p>
+            <button>Get Pro</button>
+          </div>
           <div class="circle circle-top"></div>
           <div class="circle circle-bottom"></div>
         </div>
       </div>
+      <button class="getDabangPro">Get Pro</button>
     </nav>
+    <!--responsive nav start-->
+    <nav class="responsive">
+      <div class="row align-items-center">
+        <div class="col-2">
+          <div class="burger-menu">
+            <a href="#"><i class="fa-solid fa-bars"></i></a>
+          </div>
+        </div>
+        <div class="col-4">
+          <h1 class="h1">Dashboard</h1>
+        </div>
+        <div class="col-6">
+          <div class="search">
+            <form action="">
+              <button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+              <input type="text" placeholder="Search here" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--responsive nav end-->
     <!--side nav end-->
     <!--top nav start-->
     <nav class="top-nav">
@@ -113,17 +143,14 @@
                     </form>
                   </div>
                 </div>
-                <div class="col-2">
-                  <div class="burger-menu">
-                    <a href="#"><i class="fa-solid fa-bars"></i></a>
-                  </div>
+                <div class="col-lg-2">
                   <div class="language">
                     <i class="fa-solid fa-flag-usa"></i>
                     <span>Eng(US)</span>
                     <i class="fa-solid fa-angle-down"></i>
                   </div>
                 </div>
-                <div class="col-4">
+                <div class="col-lg-4">
                   <div class="admin">
                     <div class="admin-wrapper">
                       <div class="bell">
@@ -158,17 +185,17 @@
       <!--first sec start-->
       <section class="first-sec">
         <div class="container">
-          <div class="row align-items-center">
-            <div class="col-md-8 align-self-stretch">
+          <div class="row align-items-stretch">
+            <div class="col-lg-7">
               <div class="sales">
                 <div class="row justify-content-between">
-                  <div class="col-4">
+                  <div class="col-lg-4">
                     <div class="left">
                       <h3 class="heading">Today's Sales</h3>
                       <p>Sales Summery</p>
                     </div>
                   </div>
-                  <div class="col-4 text-end">
+                  <div class="col-lg-4 text-start text-lg-end mb-4 mb-lg-0">
                     <div class="right">
                       <button class="export">
                         <i class="fa-solid fa-file-arrow-down"></i>
@@ -178,7 +205,7 @@
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-md-3 mb-3 mb-lg-0">
+                  <div class="col-lg-3 col-sm-6 mb-3 mb-lg-0">
                     <div class="card">
                       <div class="card-icon">
                         <a href="">
@@ -190,7 +217,7 @@
                       <p class="card-btm">+5% from yesterday</p>
                     </div>
                   </div>
-                  <div class="col-md-3 mb-3 mb-lg-0">
+                  <div class="col-lg-3 col-sm-6 mb-3 mb-lg-0">
                     <div class="card">
                       <div class="card-icon">
                         <a href="">
@@ -202,7 +229,7 @@
                       <p class="card-btm">+5% from yesterday</p>
                     </div>
                   </div>
-                  <div class="col-md-3 mb-3 mb-lg-0">
+                  <div class="col-lg-3 col-sm-6 mb-3 mb-lg-0">
                     <div class="card">
                       <div class="card-icon">
                         <a href="">
@@ -214,7 +241,7 @@
                       <p class="card-btm">+5% from yesterday</p>
                     </div>
                   </div>
-                  <div class="col-md-3 mb-3 mb-lg-0">
+                  <div class="col-lg-3 col-sm-6 mb-3 mb-lg-0">
                     <div class="card">
                       <div class="card-icon">
                         <a href="">
@@ -229,12 +256,25 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4 mt-2 mt-lg-0">
+            <div class="col-lg-5 mt-2 mt-lg-0">
               <div class="visitor-card">
                 <div class="card-body">
                   <h3 class="heading">Visitor Insights</h3>
-                  <hr />
                   <canvas id="linechart"></canvas>
+                  <div class="legend-box">
+                    <span class="legend legend1"
+                      ><span class="color-box violet"></span
+                      ><span class="label">loyal customer</span></span
+                    >
+                    <span class="legend legend2"
+                      ><span class="color-box violet"></span
+                      ><span class="label">loyal customer</span></span
+                    >
+                    <span class="legend legend3"
+                      ><span class="color-box violet"></span
+                      ><span class="label">loyal Customer</span></span
+                    >
+                  </div>
                 </div>
               </div>
             </div>
@@ -246,29 +286,29 @@
       <section class="second-sec">
         <div class="container">
           <div class="row mt-2 align-items-center">
-            <div class="col-md-4 mb-2 mb-lg-0">
+            <div class="col-lg-4 mb-2 mb-lg-0">
               <div class="bar-card">
                 <div class="card-body">
                   <h3 class="heading">Total Revenue</h3>
-                  <hr />
+
                   <canvas id="barchart"></canvas>
                 </div>
               </div>
             </div>
-            <div class="col-md-4 mb-2 mb-lg-0">
+            <div class="col-lg-4 mb-2 mb-lg-0">
               <div class="customer-card">
                 <div class="card-body">
                   <h3 class="heading">Customer Satisfaction</h3>
-                  <hr />
+
                   <canvas id="linechart2"></canvas>
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-lg-4">
               <div class="target-card">
                 <div class="target-body">
                   <h3 class="heading">Target vs Reality</h3>
-                  <hr />
+
                   <canvas id="Targetbarchart"></canvas>
                 </div>
               </div>
@@ -281,29 +321,88 @@
       <section class="third-sec">
         <div class="container">
           <div class="row mt-2 align-items-center">
-            <div class="col-md-4">
+            <div class="col-lg-5">
               <div class="product-card">
                 <div class="card-body">
-                  <h3 class="heading">Total Revenue</h3>
-                  <hr />
-                  <canvas id="Productbarchart"></canvas>
+                  <h3 class="heading">Top Products</h3>
+
+                  <!--table start-->
+                  <table class="table my-table">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Popularity</th>
+                        <th scope="col">Sales</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">01</th>
+                        <td>Home Decor Range</td>
+                        <td>
+                          <div class="outer-bar out-bar1">
+                            <div class="inner-bar in-bar1"></div>
+                          </div>
+                        </td>
+
+                        <td>
+                          <button class="perc-btn btn1">45%</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">02</th>
+                        <td>Disney Princess Pink Bag</td>
+                        <td>
+                          <div class="outer-bar out-bar2">
+                            <div class="inner-bar in-bar2"></div>
+                          </div>
+                        </td>
+
+                        <td><button class="perc-btn btn2">29%</button></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">03</th>
+                        <td>Bathroom Essentials</td>
+                        <td>
+                          <div class="outer-bar out-bar3">
+                            <div class="inner-bar in-bar3"></div>
+                          </div>
+                        </td>
+
+                        <td><button class="perc-btn btn3">18%</button></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">04</th>
+                        <td>Apple Smartwatches</td>
+                        <td>
+                          <div class="outer-bar out-bar4">
+                            <div class="inner-bar in-bar4"></div>
+                          </div>
+                        </td>
+
+                        <td><button class="perc-btn btn4">25%</button></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <!--table end-->
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-lg-3">
               <div class="country-card">
                 <div class="card-body">
                   <h3 class="heading">Sales Mapping by Country</h3>
-                  <hr />
+
                   <canvas id="map"></canvas>
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-lg-4">
               <div class="service-card">
                 <div class="target-body">
                   <h3 class="heading">Volume vs Service Level</h3>
-                  <hr />
+
                   <canvas id="Servicebarchart"></canvas>
                 </div>
               </div>
@@ -355,7 +454,9 @@
           datasets: [
             {
               label: "# of Votes",
-              data: [100, 99, 20, 150, 220, 300, 320, 340, 180, 200, 360, 400],
+              data: [
+                320, 300, 250, 200, 190, 230, 290, 350, 330, 220, 150, 130,
+              ],
               borderColor: border1,
               tension: 0.4,
               borderWidth: 2,
@@ -363,7 +464,7 @@
             {
               label: "# of Votes",
               data: [
-                200, 299, 120, 350, 120, 300, 340, 360, 380, 400, 260, 100,
+                260, 240, 150, 120, 140, 250, 320, 350, 310, 280, 240, 130,
               ],
               borderColor: border2,
               tension: 0.4,
@@ -372,7 +473,7 @@
             {
               label: "# of Votes",
               data: [
-                250, 350, 320, 300, 280, 260, 200, 280, 290, 320, 340, 200,
+                260, 340, 360, 320, 230, 210, 260, 280, 290, 320, 310, 260,
               ],
               borderColor: border3,
               tension: 0.4,
@@ -381,9 +482,37 @@
           ],
         },
         options: {
+          plugins: {
+            legend: {
+              display: false,
+            },
+          },
+
           scales: {
+            x: {
+              grid: {
+                color: "rgba(0, 0, 0, 0.0)",
+              },
+              border: {
+                color: "rgba(0, 0, 0, 0.0)",
+              },
+              ticks: {
+                padding: 0,
+              },
+            },
             y: {
               beginAtZero: true,
+              grid: {
+                color: "rgba(0, 0, 0, 0.1)",
+                lineWidth: 0.6,
+              },
+              border: {
+                color: "rgba(0, 0, 0, 0.0)",
+              },
+              ticks: {
+                stepSize: 100,
+                padding: 0,
+              },
             },
           },
         },
@@ -404,7 +533,7 @@
               data: [14000, 17000, 6000, 15000, 14000, 19000, 22000],
               backgroundColor: colors1,
               maxBarThickness: 15,
-              borderRadius: 5,
+              borderRadius: 3,
               borderWidth: 1,
             },
             {
@@ -412,78 +541,101 @@
               data: [13000, 12000, 23000, 5000, 13000, 17000, 10000],
               backgroundColor: colors2,
               maxBarThickness: 15,
-              borderRadius: 5,
+              borderRadius: 3,
               borderWidth: 1,
             },
           ],
         },
         options: {
+          plugins: {
+            legend: {
+              display: false,
+            },
+          },
+          categoryPercentage: 0.7,
+          barPercentage: 1,
           scales: {
+            x: {
+              grid: {
+                color: "rgba(0,0,0,0.0)",
+              },
+              border: {
+                color: "rgba(0, 0, 0, 0.0)",
+              },
+            },
             y: {
               beginAtZero: true,
+              grid: {
+                color: "rgba(0,0,0,.1)",
+              },
+              border: {
+                color: "rgba(0, 0, 0, 0.0)",
+              },
             },
           },
         },
       });
       /**revenue bar chart end**/
       /**customer satisfaction line chart start**/
+      const ctx3 = document.getElementById("linechart2");
       const Linecolors11 = "#0395FD";
       const Linecolors22 = "#00E096";
-      const Linecolors33 = "#A700FF";
+
       const border11 = "#0395FD";
-      const border22 = "#EF4444";
-      const border33 = "#42D95B";
-      const ctx3 = document.getElementById("linechart2");
+      const border22 = "#00E096";
 
       new Chart(ctx3, {
         type: "line",
         data: {
-          labels: [
-            "Jan",
-            "Feb",
-            "Mar",
-            "Apr",
-            "May",
-            "Jun",
-            "Jul",
-            "Aug",
-            "Sep",
-            "Oct",
-            "Nov",
-            "Dec",
-          ],
+          labels: ["sat", "sun", "Mon", "tue", "wed", "thu", "fri"],
           datasets: [
             {
               label: "# of Votes",
-              data: [100, 99, 20, 150, 220, 300, 320, 340, 180, 200, 360, 400],
+              data: [300, 350, 300, 280, 400, 300, 280],
               borderColor: border11,
               tension: 0.4,
               borderWidth: 2,
+              backgroundColor: border11,
             },
             {
               label: "# of Votes",
-              data: [
-                200, 299, 120, 350, 120, 300, 340, 360, 380, 400, 260, 100,
-              ],
+              data: [150, 200, 140, 100, 200, 180, 200],
               borderColor: border22,
-              tension: 0.4,
-              borderWidth: 2,
-            },
-            {
-              label: "# of Votes",
-              data: [
-                250, 350, 320, 300, 280, 260, 200, 280, 290, 320, 340, 200,
-              ],
-              borderColor: border3,
+              backgroundColor: border22,
               tension: 0.4,
               borderWidth: 2,
             },
           ],
         },
         options: {
+          plugins: {
+            legend: {
+              display: false,
+            },
+          },
           scales: {
+            x: {
+              grid: {
+                display: false,
+              },
+              border: {
+                color: "rgba(0, 0, 0, 0.0)",
+              },
+              ticks: {
+                display: false,
+              },
+            },
             y: {
               beginAtZero: true,
+              border: {
+                color: "rgba(0, 0, 0, 0.0)",
+              },
+              grid: {
+                display: false,
+              },
+              ticks: {
+                display: false,
+              },
             },
           },
         },
@@ -504,7 +656,7 @@
               data: [14000, 17000, 6000, 15000, 14000, 19000, 22000],
               backgroundColor: targetColor1,
               maxBarThickness: 15,
-              borderRadius: 5,
+              borderRadius: 3,
               borderWidth: 1,
             },
             {
@@ -512,82 +664,44 @@
               data: [13000, 12000, 23000, 5000, 13000, 17000, 10000],
               backgroundColor: targetColor2,
               maxBarThickness: 15,
-              borderRadius: 5,
+              borderRadius: 3,
               borderWidth: 1,
             },
           ],
         },
         options: {
-          scales: {
-            y: {
-              beginAtZero: true,
-            },
-          },
-        },
-      });
-      /**target bar chart end**/
-      /**product progress bar start**/
-      const product1 = "#0395FD";
-      const product2 = "#00E096";
-      const ctx5 = document.getElementById("Productbarchart");
-
-      new Chart(ctx5, {
-        type: "bar",
-        data: {
-          labels: [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-            "Saturday",
-            "sunday",
-          ],
-          datasets: [
-            {
-              label: "# of Votes",
-              data: [14000, 17000, 6000, 15000, 14000, 19000, 22000],
-              backgroundColor: colors1,
-              maxBarThickness: 10,
-              borderWidth: 1,
-              borderSkipped: false,
-              borderRadius: 5,
-              barPercentage: 0.8,
-              categoryPercentage: 0.9,
-            },
-          ],
-        },
-        options: {
-          indexAxis: "y",
           plugins: {
             legend: {
               display: false,
             },
           },
+          categoryPercentage: 0.6,
+          barPercentage: 1,
           scales: {
             x: {
               grid: {
-                display: false,
-                drawBorder: false,
+                color: "rgba(0,0,0,0.0)",
               },
-              ticks: {
-                display: false,
+              border: {
+                color: "rgba(0, 0, 0, 0.0)",
               },
             },
             y: {
               beginAtZero: true,
               grid: {
-                display: false,
-                drawBorder: false,
+                color: "rgba(0,0,0,0.0)",
               },
               ticks: {
                 display: false,
+              },
+              border: {
+                color: "rgba(0, 0, 0, 0.0)",
               },
             },
           },
         },
       });
-      /**product progress bar end**/
+      /**target bar chart end**/
       /**service bar start**/
       const service1 = "#0395FD";
       const service2 = "#00E096";
@@ -599,8 +713,16 @@
           datasets: [
             {
               label: "# of Votes",
-              data: [14000, 17000, 6000, 15000, 14000, 19000],
+              data: [14000, 17000, 7000, 15000, 14000, 19000],
               backgroundColor: service1,
+              maxBarThickness: 15,
+              borderRadius: 5,
+              borderWidth: 1,
+            },
+            {
+              label: "# of Votes",
+              data: [10000, 12000, 4000, 11000, 9000, 11000],
+              backgroundColor: service2,
               maxBarThickness: 15,
               borderRadius: 5,
               borderWidth: 1,
@@ -608,9 +730,37 @@
           ],
         },
         options: {
+          plugins: {
+            legend: {
+              display: false,
+            },
+          },
           scales: {
+            x: {
+              ticks: {
+                display: false,
+              },
+              grid: {
+                display: false,
+              },
+              border: {
+                color: "rgba(0, 0, 0, 0.0)",
+              },
+              stacked: true,
+            },
+
             y: {
               beginAtZero: true,
+              ticks: {
+                display: false,
+              },
+              grid: {
+                display: false,
+              },
+              border: {
+                color: "rgba(0, 0, 0, 0.0)",
+              },
+              stacked: true,
             },
           },
         },

@@ -1,8 +1,32 @@
-/**medium device css start**/
-@media (min-width: 768px) and (max-width: 991.99px) {
+/**extra extra large device css start**/
+@media (min-width: 1400px) {
+  nav.responsive {
+    display: none;
+  }
+  .burger-menu {
+    display: none;
+  }
+
+  .top-nav {
+    display: block;
+  }
+
+  .side-nav-bottom {
+    display: block;
+  }
+  .getDabangPro {
+    display: none;
+  }
+}
+/**extra extra large device css end**/
+/**extra large device css start**/
+@media (min-width: 1200px) and (max-width: 1399.99px) {
   .side-nav {
     left: -50%;
     width: 50%;
+  }
+  nav.responsive {
+    display: block;
   }
   .active {
     left: 0;
@@ -13,19 +37,74 @@
   .main {
     padding-left: 0;
   }
-  .nav-left h1 {
-    font-size: 20px;
-    margin: 0 0 10px;
-    text-align: center;
-  }
-  .search form input {
-    width: 100%;
-  }
-  .language {
+  .top-nav {
     display: none;
   }
-  .admin {
+}
+/**extra large device css end**/
+/**large device css start**/
+@media (min-width: 992px) and (max-width: 1199.99px) {
+  .side-nav {
+    left: -50%;
+    width: 50%;
+  }
+  nav.responsive {
+    display: block;
+  }
+  .active {
+    left: 0;
+  }
+  .burger-menu {
+    display: block;
+  }
+  .main {
+    padding-left: 0;
+  }
+  .top-nav {
     display: none;
+  }
+  .side-nav-body {
+    height: 75%;
+  }
+
+  .side-nav-bottom {
+    display: none;
+  }
+  .getDabangPro {
+    display: block;
+  }
+}
+/**large device css end**/
+/**medium device css start**/
+@media (min-width: 768px) and (max-width: 991.99px) {
+  .side-nav {
+    left: -50%;
+    width: 50%;
+  }
+  nav.responsive {
+    display: block;
+  }
+  .active {
+    left: 0;
+  }
+  .burger-menu {
+    display: block;
+  }
+  .main {
+    padding-left: 0;
+  }
+  .top-nav {
+    display: none;
+  }
+  .side-nav-body {
+    height: 75%;
+  }
+
+  .side-nav-bottom {
+    display: none;
+  }
+  .getDabangPro {
+    display: block;
   }
 }
 /**medium device css end**/
@@ -35,6 +114,9 @@
     left: -50%;
     width: 50%;
   }
+  nav.responsive {
+    display: block;
+  }
   .active {
     left: 0;
   }
@@ -44,19 +126,18 @@
   .main {
     padding-left: 0;
   }
-  .nav-left h1 {
-    font-size: 20px;
-    margin: 0 0 10px;
-    text-align: center;
-  }
-  .search form input {
-    width: 100%;
-  }
-  .language {
+  .top-nav {
     display: none;
   }
-  .admin {
+  .side-nav-body {
+    height: 75%;
+  }
+
+  .side-nav-bottom {
     display: none;
+  }
+  .getDabangPro {
+    display: block;
   }
 }
 
@@ -68,6 +149,9 @@
     left: -50%;
     width: 50%;
   }
+  nav.responsive {
+    display: block;
+  }
   .active {
     left: 0;
   }
@@ -77,19 +161,18 @@
   .main {
     padding-left: 0;
   }
-  .nav-left h1 {
-    font-size: 20px;
-    margin: 0 0 10px;
-    text-align: center;
-  }
-  .search form input {
-    width: 100%;
-  }
-  .language {
+  .top-nav {
     display: none;
   }
-  .admin {
+  .side-nav-body {
+    height: 75%;
+  }
+
+  .side-nav-bottom {
     display: none;
+  }
+  .getDabangPro {
+    display: block;
   }
 }
 /*****extra small device css end***/

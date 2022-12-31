@@ -124,13 +124,7 @@ li {
   margin-bottom: 0;
   color: rgba(0, 0, 0, 0.766);
 }
-.burger-menu {
-  margin: 6px 10px 0;
-  display: none;
-}
-.burger-menu a i {
-  color: rgb(0, 0, 0, 0.6);
-}
+
 /***top nav css end***/
 /**side nav css start**/
 .side-nav {
@@ -157,6 +151,13 @@ li {
   height: 40px;
   border-radius: 10px;
   background-color: #645caad4;
+  text-align: center;
+  line-height: 40px;
+}
+.logo .shape i {
+  color: white;
+  font-size: 20px;
+  line-height: 40px;
 }
 .logo {
   padding: 10px;
@@ -207,12 +208,36 @@ li {
   transition: 0.5s ease-in-out;
 }
 .side-nav-bottom .card {
-  width: 80%;
+  width: 90%;
   height: 100%;
   background-color: #645caa;
   position: relative;
   overflow: hidden;
   border: none;
+}
+.side-nav-bottom .card .card-content {
+  text-align: center;
+  padding-top: 20px;
+}
+.side-nav-bottom .card .card-content h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+}
+.side-nav-bottom .card .card-content p {
+  font-size: 13px;
+  font-weight: 500;
+  color: white;
+  margin: 15px 0 20px;
+}
+.side-nav-bottom .card .card-content button {
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 6px 25px;
+  color: #645caa;
+  font-size: 15px;
+  font-weight: 600;
 }
 .circle {
   position: absolute;
@@ -242,6 +267,8 @@ li {
   background-color: white;
   padding: 20px;
   border-radius: 15px;
+  height: 100%;
+  width: 100%;
 }
 .heading {
   font-size: 18px;
@@ -275,7 +302,7 @@ li {
 .card {
   background-color: #fee3e5;
   padding: 20px;
-  height: 200px;
+  height: auto;
   width: 100%;
   border-radius: 10px;
   border: none;
@@ -306,7 +333,7 @@ li {
   margin: 5px 0 !important;
 }
 .card-btm {
-  font-size: 14px;
+  font-size: 11px;
   color: #3873da;
   font-weight: 500;
   margin-top: 5px !important;
@@ -321,6 +348,31 @@ li {
 .visitor-card {
   background-color: white;
   border-radius: 20px;
+}
+.visitor-card .legend-box {
+  margin-top: 10px;
+  text-align: center;
+}
+.visitor-card .legend-box .legend {
+  margin-left: 10px;
+}
+.visitor-card .legend-box .label {
+  color: rgba(0, 0, 0, 0.808);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  vertical-align: middle;
+}
+.visitor-card .legend-box .color-box {
+  display: inline-block;
+  height: 14px;
+  width: 14px;
+  margin-right: 5px;
+  line-height: 14px;
+  vertical-align: middle;
+}
+.visitor-card .legend-box .violet {
+  background-color: violet;
 }
 /**first sec end**/
 /**second sec start**/
@@ -348,6 +400,109 @@ li {
 }
 
 /**second sec end**/
+
+/**table css start**/
+.my-table th {
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+}
+.my-table td {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 400;
+  vertical-align: middle;
+}
+.my-table td .outer-bar {
+  border-radius: 10px;
+  height: 4px;
+  width: 180px;
+}
+.my-table td .outer-bar .inner-bar {
+  height: 100%;
+  border-radius: 10px;
+}
+.out-bar1 {
+  background-color: #d8edff;
+}
+.out-bar2 {
+  background-color: #97fbcc;
+}
+.out-bar3 {
+  background-color: #d6c1ff;
+}
+.out-bar4 {
+  background-color: #ffe9d0;
+}
+.in-bar1 {
+  background-color: #0395fd;
+  width: 45%;
+}
+.in-bar2 {
+  background-color: #00e096;
+  width: 29%;
+}
+.in-bar3 {
+  background-color: #ab81ff;
+  width: 18%;
+}
+.in-bar4 {
+  background-color: #ff8f0d;
+  width: 25%;
+}
+.table > :not(:last-child) > :last-child > * {
+  border-bottom-color: rgba(128, 128, 128, 0.14);
+}
+.table > :not(caption) > * > * {
+  border-bottom-width: 1px;
+  border-bottom-color: rgba(128, 128, 128, 0.138);
+}
+.perc-btn {
+  padding: 1px 6px;
+  border: none;
+  background-color: transparent;
+  font-size: 12px;
+  font-weight: 600;
+  border: 1px solid transparent;
+  border-radius: 6px;
+}
+.perc-btn.btn1 {
+  background-color: #d8edff;
+  color: #0395fd;
+  border-color: #0395fd;
+}
+.perc-btn.btn2 {
+  background-color: #97fbcc5e;
+  color: #00e096;
+  border-color: #00e096;
+}
+.perc-btn.btn3 {
+  background-color: #d6c1ff83;
+  color: #ab81ff;
+  border-color: #ab81ff;
+}
+.perc-btn.btn4 {
+  background-color: #ffe9d0;
+  color: #ff8f0d;
+  border-color: #ff8f0d;
+}
+/**table css end**/
+/**main css end**/
+/**responsive nav css start**/
+nav.responsive {
+  background-color: white;
+  padding: 15px;
+  display: none;
+}
+
+.burger-menu a i {
+  color: rgb(0, 0, 0, 0.6);
+}
+.responsive .h1 {
+  font-size: 18px;
+}
+
+/**responsive nav css end**/
 /**overlay start**/
 .main {
   position: relative;
@@ -366,8 +521,8 @@ li {
 }
 .cross {
   position: absolute;
-  right: 70px;
-  top: 60px;
+  right: 29px;
+  top: 103px;
 }
 .cross a i {
   color: white;
@@ -378,7 +533,18 @@ li {
 .cross a {
   background-color: rgba(255, 255, 255, 0.338);
   padding: 13px 19px;
+  vertical-align: middle;
   border-radius: 100%;
 }
 /**overlay end**/
-/**main css end**/
+.getDabangPro {
+  background-color: #645caa;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 30px;
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 25px;
+  display: none;
+}
