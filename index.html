@@ -95,6 +95,10 @@
         </div>
       </div>
       <button class="getDabangPro">Get Pro</button>
+      <button class="slide-left">
+        <i class="fa-solid fa-angle-left"></i>
+      </button>
+      <button class="slide-left-pro-btn">PRO</button>
     </nav>
     <!--responsive nav start-->
     <nav class="responsive">
@@ -206,7 +210,7 @@
                 </div>
                 <div class="row">
                   <div class="col-lg-3 col-sm-6 mb-3 mb-lg-0">
-                    <div class="card">
+                    <div class="card card1">
                       <div class="card-icon">
                         <a href="">
                           <i class="fa-solid fa-chart-simple"></i>
@@ -218,7 +222,7 @@
                     </div>
                   </div>
                   <div class="col-lg-3 col-sm-6 mb-3 mb-lg-0">
-                    <div class="card">
+                    <div class="card card2">
                       <div class="card-icon">
                         <a href="">
                           <i class="fa-solid fa-chart-simple"></i>
@@ -230,7 +234,7 @@
                     </div>
                   </div>
                   <div class="col-lg-3 col-sm-6 mb-3 mb-lg-0">
-                    <div class="card">
+                    <div class="card card3">
                       <div class="card-icon">
                         <a href="">
                           <i class="fa-solid fa-chart-simple"></i>
@@ -242,7 +246,7 @@
                     </div>
                   </div>
                   <div class="col-lg-3 col-sm-6 mb-3 mb-lg-0">
-                    <div class="card">
+                    <div class="card card4">
                       <div class="card-icon">
                         <a href="">
                           <i class="fa-solid fa-chart-simple"></i>
@@ -263,16 +267,16 @@
                   <canvas id="linechart"></canvas>
                   <div class="legend-box">
                     <span class="legend legend1"
-                      ><span class="color-box violet"></span
-                      ><span class="label">loyal customer</span></span
+                      ><span class="color-box"></span
+                      ><span class="label">Loyal Customer</span></span
                     >
                     <span class="legend legend2"
-                      ><span class="color-box violet"></span
-                      ><span class="label">loyal customer</span></span
+                      ><span class="color-box"></span
+                      ><span class="label">New Customer</span></span
                     >
                     <span class="legend legend3"
-                      ><span class="color-box violet"></span
-                      ><span class="label">loyal Customer</span></span
+                      ><span class="color-box"></span
+                      ><span class="label">Unique Customer</span></span
                     >
                   </div>
                 </div>
@@ -419,17 +423,16 @@
     </section>
 
     <script src="js/bootstrap.bundle.min.js"></script>
-
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="js/script.js"></script>
-
+    <script src="https://unpkg.com/chartjs-chart-geo@3.5.2/build/index.umd.min.js"></script>
     <script>
       //Chart.js
       /**visitors insight line chart start**/
-      const Linecolors1 = "#0395FD";
+      const Linecolors1 = "#9629CF";
       const Linecolors2 = "#00E096";
       const Linecolors3 = "#A700FF";
-      const border1 = "#0395FD";
+      const border1 = "#9629CF";
       const border2 = "#EF4444";
       const border3 = "#42D95B";
       const ctx1 = document.getElementById("linechart");
@@ -766,6 +769,39 @@
         },
       });
       /**service bar end**/
+      /**map start**/
+
+      const url = "https://unpkg.com/world-atlas@2.0.2/countries-50m.json";
+
+      // topojson=lines or arcs lines combines =a country;
+      // geojson=fixed shape of country;
+      fetch(url)
+        .then((result) => result.json())
+        .then((datapoint) => {
+          countries = ChartGeo.topojson.feature(
+            datapoint,
+            datapoint.objects.countries
+          ).features;
+          const ctx7 = document.getElementById("map");
+          new Chart(ctx7, {
+            type: "choropleth",
+            data: {
+              labels: countries.map((country) => country.properties.name),
+              datasets: [
+                {
+                  label: "Countries",
+                  data: countries.map((country) => ({
+                    feature: country,
+                    value: Math.random(),
+                  })),
+                },
+              ],
+            },
+            options: {},
+          });
+        });
+
+      /**map end**/
     </script>
   </body>
 </html>
