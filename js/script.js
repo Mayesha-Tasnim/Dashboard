@@ -22,3 +22,37 @@ slideLeftBtn.addEventListener("click", function () {
   slideLeftBtn.classList.toggle("slide-right");
   mainSec.classList.toggle("main-slide-left");
 });
+
+/**map start**/
+
+const url = "https://unpkg.com/world-atlas@2.0.2/countries-50m.json";
+
+// topojson=lines or arcs lines combines =a country;
+// geojson=fixed shape of country;
+fetch(url)
+  .then((result) => result.json())
+  .then((datapoint) => {
+    countries = ChartGeo.topojson.feature(
+      datapoint,
+      datapoint.objects.countries
+    ).features;
+    const ctx7 = document.getElementById("map");
+    new Chart(ctx7, {
+      type: "choropleth",
+      data: {
+        labels: countries.map((country) => country.properties.name),
+        datasets: [
+          {
+            label: "Countries",
+            data: countries.map((country) => ({
+              feature: country,
+              value: Math.random(),
+            })),
+          },
+        ],
+      },
+      options: {},
+    });
+  });
+
+/**map end**/

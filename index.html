@@ -225,11 +225,11 @@
                     <div class="card card2">
                       <div class="card-icon">
                         <a href="">
-                          <i class="fa-solid fa-chart-simple"></i>
+                          <i class="fa-solid fa-file"></i>
                         </a>
                       </div>
-                      <h3 class="card-header">$1K</h3>
-                      <p class="card-label">Total Sales</p>
+                      <h3 class="card-header">300</h3>
+                      <p class="card-label">Total Order</p>
                       <p class="card-btm">+5% from yesterday</p>
                     </div>
                   </div>
@@ -237,11 +237,11 @@
                     <div class="card card3">
                       <div class="card-icon">
                         <a href="">
-                          <i class="fa-solid fa-chart-simple"></i>
+                          <i class="fa-solid fa-tag"></i>
                         </a>
                       </div>
-                      <h3 class="card-header">$1K</h3>
-                      <p class="card-label">Total Sales</p>
+                      <h3 class="card-header">5</h3>
+                      <p class="card-label">Product Sold</p>
                       <p class="card-btm">+5% from yesterday</p>
                     </div>
                   </div>
@@ -249,11 +249,11 @@
                     <div class="card card4">
                       <div class="card-icon">
                         <a href="">
-                          <i class="fa-solid fa-chart-simple"></i>
+                          <i class="fa-solid fa-user-plus"></i>
                         </a>
                       </div>
-                      <h3 class="card-header">$1K</h3>
-                      <p class="card-label">Total Sales</p>
+                      <h3 class="card-header">8</h3>
+                      <p class="card-label">New Customers</p>
                       <p class="card-btm">+5% from yesterday</p>
                     </div>
                   </div>
@@ -265,7 +265,7 @@
                 <div class="card-body">
                   <h3 class="heading">Visitor Insights</h3>
                   <canvas id="linechart"></canvas>
-                  <div class="legend-box">
+                  <div class="legend-box legend-box1">
                     <span class="legend legend1"
                       ><span class="color-box"></span
                       ><span class="label">Loyal Customer</span></span
@@ -276,8 +276,8 @@
                     >
                     <span class="legend legend3"
                       ><span class="color-box"></span
-                      ><span class="label">Unique Customer</span></span
-                    >
+                      ><span class="label">Unique Customer</span>
+                    </span>
                   </div>
                 </div>
               </div>
@@ -294,8 +294,17 @@
               <div class="bar-card">
                 <div class="card-body">
                   <h3 class="heading">Total Revenue</h3>
-
                   <canvas id="barchart"></canvas>
+                  <div class="legend-box legend-box2">
+                    <span class="legend legend1"
+                      ><span class="color-box"></span
+                      ><span class="label">Online Sales</span></span
+                    >
+                    <span class="legend legend2"
+                      ><span class="color-box"></span
+                      ><span class="label">Offline Sales</span></span
+                    >
+                  </div>
                 </div>
               </div>
             </div>
@@ -303,8 +312,24 @@
               <div class="customer-card">
                 <div class="card-body">
                   <h3 class="heading">Customer Satisfaction</h3>
-
                   <canvas id="linechart2"></canvas>
+                  <div class="legend-box legend-box3">
+                    <span class="legend legend1"
+                      ><span class="color-box"></span>
+                      
+                        <span class="label">Last Month</span>
+                        
+                        
+                      </span>
+                    </span>
+                    <span class="legend legend2"
+                      ><span class="color-box"></span
+                      >
+                        <span class="label">This Month</span>
+                        
+                      
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -312,7 +337,6 @@
               <div class="target-card">
                 <div class="target-body">
                   <h3 class="heading">Target vs Reality</h3>
-
                   <canvas id="Targetbarchart"></canvas>
                 </div>
               </div>
@@ -329,7 +353,6 @@
               <div class="product-card">
                 <div class="card-body">
                   <h3 class="heading">Top Products</h3>
-
                   <!--table start-->
                   <table class="table my-table">
                     <thead>
@@ -769,39 +792,7 @@
         },
       });
       /**service bar end**/
-      /**map start**/
-
-      const url = "https://unpkg.com/world-atlas@2.0.2/countries-50m.json";
-
-      // topojson=lines or arcs lines combines =a country;
-      // geojson=fixed shape of country;
-      fetch(url)
-        .then((result) => result.json())
-        .then((datapoint) => {
-          countries = ChartGeo.topojson.feature(
-            datapoint,
-            datapoint.objects.countries
-          ).features;
-          const ctx7 = document.getElementById("map");
-          new Chart(ctx7, {
-            type: "choropleth",
-            data: {
-              labels: countries.map((country) => country.properties.name),
-              datasets: [
-                {
-                  label: "Countries",
-                  data: countries.map((country) => ({
-                    feature: country,
-                    value: Math.random(),
-                  })),
-                },
-              ],
-            },
-            options: {},
-          });
-        });
-
-      /**map end**/
+      
     </script>
   </body>
 </html>

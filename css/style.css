@@ -368,7 +368,7 @@ li {
   padding: 0;
 }
 .card {
-  padding: 20px;
+  padding: 20px 15px;
   height: auto;
   width: 100%;
   border-radius: 10px;
@@ -398,7 +398,10 @@ li {
 .card4 .card-icon a {
   background-color: #be83f9;
 }
-
+.card4 .card-icon a {
+  padding: 11px 12px;
+  border-radius: 100%;
+}
 .card-icon a {
   padding: 8px 12px;
   border-radius: 100%;
@@ -419,7 +422,7 @@ li {
 }
 .card-label {
   color: rgb(0, 0, 0, 0.6);
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 500;
   margin: 5px 0 !important;
 }
@@ -440,21 +443,21 @@ li {
   background-color: white;
   border-radius: 20px;
 }
-.visitor-card .legend-box {
+.legend-box {
   margin-top: 10px;
   text-align: center;
 }
-.visitor-card .legend-box .legend {
+.legend-box .legend {
   margin-left: 10px;
 }
-.visitor-card .legend-box .label {
+.legend-box .label {
   color: rgba(0, 0, 0, 0.808);
   font-weight: 500;
   font-size: 12px;
   line-height: 14px;
   vertical-align: middle;
 }
-.visitor-card .legend-box .color-box {
+.legend-box .color-box {
   display: inline-block;
   height: 14px;
   width: 14px;
@@ -470,6 +473,37 @@ li {
 }
 .legend3 .color-box {
   background-color: #41d15a;
+}
+.legend-box2 .color-box {
+  display: inline-block;
+  height: 14px;
+  width: 14px;
+  margin-right: 5px;
+  line-height: 14px;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+.legend1 .color-box {
+  background-color: #0693fa;
+}
+.legend2 .color-box {
+  background-color: #08e198;
+}
+.legend-box3 .color-box {
+  display: inline-block;
+  height: 14px;
+  width: 14px;
+  margin-right: 5px;
+  line-height: 14px;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+.legend-box3 .legend1 {
+  padding-right: 10px;
+  border-right: 1px solid rgba(0, 0, 0, 0.437);
+}
+.legend-box-3 .legend h3 {
+  font-size: 14px;
 }
 /**first sec end**/
 /**second sec start**/
